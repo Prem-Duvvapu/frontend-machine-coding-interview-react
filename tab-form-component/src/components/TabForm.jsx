@@ -5,6 +5,13 @@ import Settings from "./Settings";
 
 const TabForm = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [data, setData] = useState({
+        name: "Prem",
+        age: "23",
+        email: "premd@gmail.com",
+        interests: ["coding", "reading books"],
+        theme: "dark",
+    });
 
     const tabs = [
         {
@@ -40,7 +47,7 @@ const TabForm = () => {
             </div>
 
             <div className="tab-body">
-                <ActiveTabComponent />
+                <ActiveTabComponent data={data} setData={setData} />
             </div>
         </div>
     );
