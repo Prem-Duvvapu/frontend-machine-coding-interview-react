@@ -13,3 +13,9 @@
     border: 1px solid black;
     height: 300px;
 }
+
+.error {
+    color: red;
+    display: block;
+    font-size: small;
+}
