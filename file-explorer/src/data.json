@@ -1,0 +1,41 @@
+[
+    {
+        "id": "1",
+        "name": "public",
+        "isFolder": true,
+        "children": []
+    },
+    {
+        "id": "2",
+        "name": "src",
+        "isFolder": true,
+        "children": [
+            {
+                "id": "3",
+                "name": "components",
+                "isFolder": true,
+                "children": []
+            },
+            {
+                "id": "4",
+                "name": "App.jsx",
+                "isFolder": false
+            },
+            {
+                "id": "5",
+                "name": "style.css",
+                "isFolder": false
+            },
+            {
+                "id": "6",
+                "name": "data.json",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "package.json",
+        "isFolder": false
+    }
+]
