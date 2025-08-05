@@ -11,4 +11,6 @@
     <li>Tab Form Component (Myntra, Zepto)</li>
     <li>Pagination (Swiggy, Flipkart)</li>
     <li>Autocomplete Search Bar (Amazon, Ola)</li>
+    <li>File Explorer/VS code sidebar (Microsoft, Atlassian)</li>
+    <li>Progress Bar(Google, Uber, Meta)</li>
 </ol>
