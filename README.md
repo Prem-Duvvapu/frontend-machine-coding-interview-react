@@ -8,5 +8,7 @@
 
 <ol>
     <h2>List of Questions</h2>
-    <li>Tab Form Component</li>
+    <li>Tab Form Component (Myntra, Zepto)</li>
+    <li>Pagination (Swiggy, Flipkart)</li>
+    <li>Autocomplete Search Bar (Amazon, Ola)</li>
 </ol>
