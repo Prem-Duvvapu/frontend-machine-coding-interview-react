@@ -13,4 +13,5 @@
     <li>Autocomplete Search Bar (Amazon, Ola)</li>
     <li>File Explorer/VS code sidebar (Microsoft, Atlassian)</li>
     <li>Progress Bar(Google, Uber, Meta)</li>
+    <li>OTP Input (Flipkart, Swiggy, Myntra)</li>
 </ol>
