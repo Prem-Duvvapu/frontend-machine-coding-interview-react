@@ -17,12 +17,20 @@ function App() {
     if (isNaN(value))
       return;
 
+    const newValue = value.trim();
     const temp = [...inputArr];
-    temp[index] = value.slice(-1);
+    temp[index] = newValue.slice(-1);
     setInputArr(temp);
 
-    refArr.current[index+1]?.focus()
+    newValue  && refArr.current[index+1]?.focus()
   };
+
+  const onHandleKeyDown = (e, index) => {
+    if (!e.target.value && e.key === "Backspace") {
+      console.log(index);
+      refArr.current[index-1]?.focus()
+    }
+  }
 
   return (
     <div className="App">
@@ -36,6 +44,7 @@ function App() {
             type="text" 
             ref={(inputVal) => refArr.current[index] = inputVal}
             onChange={(e) => onHandleChange(index, e.target.value)}
+            onKeyDown={(e) => onHandleKeyDown(e, index)}
           />
         ))
       }
