@@ -14,4 +14,8 @@
     <li>File Explorer/VS code sidebar (Microsoft, Atlassian)</li>
     <li>Progress Bar(Google, Uber, Meta)</li>
     <li>OTP Input (Flipkart, Swiggy, Myntra)</li>
+    <li>Nested Checkboxes (Amazon, Flipkart)</li>
+    <li>Chips Input (Flipkart, Amazon)</li>
+    <li>TODO List (Microsoft, Ola, Swiggy)</li>
+    <li>Accordion (Meta, AirBNB, Zomato)</li>
 </ol>
