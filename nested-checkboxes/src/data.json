@@ -16,21 +16,39 @@
                         "name": "Lemon"
                     }
                 ]
+            },
+            {
+                "id": 5,
+                "name": "Berries",
+                "children": [
+                    {
+                        "id": 6,
+                        "name": "Strawberry"
+                    },
+                    {
+                        "id": 7,
+                        "name": "Blueberry"
+                    }
+                ]
             }
         ]
     },
     {
-        "id": 5,
-        "name": "Berries",
+        "id": 8,
+        "name": "Tropical",
         "children": [
             {
-                "id": 6,
-                "name": "Strawberry"
+                "id": 9,
+                "name": "Mango"
             },
             {
-                "id": 7,
-                "name": "Blueberry"
+                "id": 10,
+                "name": "Banana"
             }
         ]
+    },
+    {
+        "id": 11,
+        "name": "Apple"
     }
 ]
