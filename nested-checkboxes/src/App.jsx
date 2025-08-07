@@ -1,8 +1,32 @@
+// TODO: If all the children are checked/unchecked then mark the parent as same.
+
+import { useState } from 'react';
 import './style.css';
 import checkboxesData from './data.json';
-import { useState } from 'react';
 
 const CheckBoxes = ({ list, checked, setChecked }) => {
+  const handleChange = (isChecked, node) => {
+    setChecked((prev) => {
+      const newState = { 
+        ...prev, 
+        [node.id]: isChecked,
+      };
+
+      // If parent is checked/unchecked then mark all of its children as same.
+      const updateChildren = (node) => {
+        node?.children?.forEach((child) => {
+          newState[child.id] = isChecked;
+          updateChildren(child);
+        })
+      }
+      updateChildren(node);
+
+      // If all the children are checked/unchecked then mark the parent as same.
+
+      return newState;
+    });
+  };
+
   return (
     <div className="outer">
       {
@@ -12,6 +36,7 @@ const CheckBoxes = ({ list, checked, setChecked }) => {
               type="checkbox"
               checked={checked[node.id] || false}
               id={node.id}
+              onChange={(e) => handleChange(e.target.checked, node)}
             />
             <label htmlFor={node.id}>
               {node.name}
@@ -25,14 +50,14 @@ const CheckBoxes = ({ list, checked, setChecked }) => {
 }
 
 function App() {
-  const [ checked, setChecked ] = useState({3: true});
+  const [ checked, setChecked ] = useState({});
 
   return (
     <div className="App">
       <h1>Nested Checkboxes</h1>
       <CheckBoxes list={checkboxesData} checked={checked} setChecked={setChecked} />
     </div>
-  )
+  );
 }
 
 export default App
